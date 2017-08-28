@@ -1,104 +1,105 @@
-\documentclass[letter]{res}
-
+\documentclass[11pt]{res}
 \setlength{\textheight}{9.5in}
-%\usepackage{fontspec}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
 \usepackage{geometry}
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
 \geometry{
  a4paper,
  total={210mm,297mm},
- left=20mm,
+ left=12mm,
  right=25mm,
- top=17mm,
- bottom=17mm,
+ top=8mm,
+ bottom=8mm,
  bindingoffset=0mm
- }\usepackage{fontenc}
+ }
+\usepackage{fontenc}
 \usepackage{enumitem}
 \setlist{nolistsep}
 \usepackage[colorinlistoftodos]{todonotes}
-%\setmainfont[Mapping=tex-text]{Linux Libertine O}
 
 
 \begin{document}
-
-\name{Bryan Ehlers\\[14pt]}
-\address{ (507)-403-1634 \\}
-\address{
-  \texttt{bryan-ehlers@uiowa.edu}\\ } 
+\name{\fontseries{eb}\selectfont \Huge SHREYAS MOUDGALYA}
+\address{  
+	3522 South State Street Apt 307 Chicago IL 60609 || 
+	smoudgal@hawk.iit.edu || 
+    630-561-4088
+}
 \begin{resume}
-  \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
-\section{Education}
-{\sl Bachelors of Science} - Electrical Engineering (3.41/4.0)\hfill Expected: May 2017\\
-{\sl Minor} - Computer Science \\
-University of Iowa,  Iowa City, IA
+\section{\Large \fontseries{eb}\selectfont EDUCATION}
+{\sl \large Bachelors of Science - Computer Science} \hfill August 2014 - May 2017\\
+{\sl Minor} - Applied Mathematics || GPA: 3.85/4.0 || Dean’s List (all semesters) \\
+Illinois Institute of Technology,  Chicago, IL
   \vspace{-2mm}
-\section{Relevant Coursework}
-  {\sl Electrical Engineering}: Circuit Lab 1 and 2, Circuit Design, Digital Design\\
-  {\sl Computer Science}: Data Structures, Algorithms, C++, 
 
-\section{Experience}
-University of Iowa Carver College of Medicine | Iowa City, IA \newline
- - {\sl Research Assistant} \hfill February 2014 – March 2015\\
+
+\section{\Large \fontseries{eb}\selectfont WORK EXPERIENCE} {\bfseries \large
+Systems for Performance, Energy, and Resiliency}
+ \newline
+ {\sl Research Assistant} \hfill  September 2016 to – January   2017\\
  \vspace{-2mm}
  \begin{itemize}
- \item Designed a database using Microsoft Access to store 100+ interview responses.
- \item Trained new employees in laboratory processes and proper documentation.
- \item Troubleshoot laboratory processes to identify and address inefficiencies.
+ \item Implemented a power aware window based scheduling plugin to the SLURM Scheduler.
+ \item Integrated a 0-1 knapsack in the PySlurm API on top of SLURM running a Docker CentOS 7.
+ \item This Green computing approach will save over \$100 per addition 1MWh used.
  \end{itemize}
    \vspace{-2mm}
 
-NanoMedTrix, LLC | Coralville, IA \newline - {\sl Image Processing Engineer} \hfill October 2014 – January 2015\\
+{\bfseries \large Data-Intensive Distributed Systems Lab}
+\newline 
+{\sl Research Assistant} \hfill May 2016 – September 2016\\
   \vspace{-2mm}
   \begin{itemize}
-  \item Supported research team by compiling MRI data. 
+  \item Implemented a linear runtime graph partitioning algorithm based on Label Propagation. 
+  \item This was the first ever usage of the algorithm which was written to partition a billion node graph on GRAPH/Z. 
   \end{itemize}
     \vspace{-2mm}
 
- City of Northfield | Northfield, IA \newline - {\sl Lifeguard}\hfill  June 2013 – August 2013\\
+{\bfseries \large Zookks Incorporated} \newline 
+ {\sl Software Engineering Intern}\hfill  September 2014 – May 2016\\
   \vspace{-2mm}
  \begin{itemize}
- \item Maintain safe and secure swimming area by enforcing rules, policies, and procedures.
- \item Take care of pool.
+ \item Worked on the Python backend development using the Flask Framework.
+ \item Designed an ER database model for modeling the domain, implemented an SQL script that creates the
+database, and Implemented the app to enable a user to store, manipulate, and query the database.
  \end{itemize}
   \vspace{-2mm}
  
- Kmart | Northfield, IA \newline - {\sl Electronics Associate}\hfill May 2011 – August 2013\\
+{\bfseries \large National Instruments} \newline 
+ {\sl Hardware and System Design Intern}\hfill May 2015 – September 2015\\
  \vspace{-2mm}
  \begin{itemize}
- \item Help customers purchase electronics.
- \item Stock and organize items.
+ \item Wrote system software using LabVIEW for Patient Care and Monitoring System Signals.
+ \item Improved the real time patient data processing by 20\% using DAQ (MyDAQ and MyRIO).
+ \item Analyzed the Circuit and Power Measurements using NI Multisim and NI Ultiboard.Help customers purchase electronics.
  \end{itemize}
   \vspace{-2mm}
  
-\section{Skills}
-{\sl Programming Languages:}  C, C++, and Python\\
-{\sl Operating Systems:} Linux/Unix system, Windows \\ 
-{\sl Software:} NI Multisim, SPICE software,  \LaTeX \\ 
-{\sl Laboratory:}  oscilloscope, logic analyzer, signal generator, solder, and multimeter \\
+\section{\Large \fontseries{eb}\selectfont SKILLS}
+{\sl Programming Languages:}   Java, Python, C, SQL, \LaTeX, MATLAB, MIPS, HTML/CSS. \\
+{\sl Familiar:} OpenMP, Android, MPI, CUDA, AWS/Azure, Linux, Git, SOAP, REST, Flask.
  \vspace{-2mm}
 
-\section{Projects}
-Raspberry Pi Robot \newline - {\sl Individual} \\
+\section{\large \fontseries{eb}\selectfont PROJECTS}
+{\itshape \large Diabetic Retinopathy} - Analyzed retinopathy data to detect onset of Diabetic Retinopathy. Built various learning models using numpy, pandas, statsmodels, and mathplotlib.
+
+{\itshape \large SmartBar} - Collaborated on implementing a weightlifting bar bluetooth synced app for Android to keep track of a lifters workouts/overall progress.
+
+\section{\Large \fontseries{eb}\selectfont SELECTED ACHIEVEMENTS} 
 \begin{itemize}
-  \vspace{-2mm}
- \item Using a Raspberry Pi to construct a remote control robot.
- \item Camera module connection for live streaming robot vision back to monitor.
- \item Developed Python code to control robot motions and camera module.
+\item Finalist, MinneHack 2017 (top 6)
+\item Selected (top 29) students in the United States to participate in the International Conference for High
+Performance Computing, Networking, Storage and Analysis (SuperComputing 2016).
+\item Selected (top 60) to participate in the Pitching Conference of National Conference of the Collegiate
+Entrepreneurs Organization (CEO).
+\item Selected (top 7) for Dean Betts’ Summer Undergraduate Research Fellowship for a 10-week research with faculty to gain invaluable hands-on research experience.
+\item Selected as Microsoft Student Partner to represent Microsoft at Illinois Institute of Technology.
+\item Selected among 120 students over Midwest Region for Campus 1871 [April 8-10, 2016].
+\item Won Honorable Mention (\$200 Cash), CS2050 Big Data Hackathon.
 \end{itemize}
-3pi Robot \newline - {\sl Group Project}\\
-\begin{itemize}
-  \vspace{-2mm}
- \item Developed C code to control robot motion and ability to autonomously traverse a maze. 
- \end{itemize}
-
-\section{Activities} 
- Institute of Electrical and Electronic Engineers | Member \\
- University of Iowa Powerlifting Club Treasurer (2013) | Member (Present) 
- 
-\section{Awards} 
- Awarded Dean’s List for Fall 2013, Fall 2014
 
 \end{resume}
 \end{document}
